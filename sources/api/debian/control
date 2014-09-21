@@ -1,0 +1,10 @@
+Source: ostdlabs-etracker-${customer}-api
+Section: misc
+Priority: extra
+Maintainer: Askar Akhmerov <eca@ostdlabs.com>
+Build-Depends: cdbs, debhelper (>= 7.0.50~)
+
+Package: ostdlabs-etracker-${customer}-api
+Architecture: all
+Depends: ${misc:Depends}, ostdlabs-etracker-${customer}-api
+Description: restfull web services and backend for etracker ${customer} project

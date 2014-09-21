@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+# Add here any variable or target overrides you need.
+PACKAGE := $(DEB_SOURCE_PACKAGE)
+
+DEB_DH_INSTALLINIT_ARGS := --no-start
+
+JAVA_HOME := $(shell update-alternatives --query javac | grep Best: | cut -d " " -f2 | sed 's|/bin/javac||')
+
+build:
+	mkdir -p temp/unpacked
+	curl -O -J -L "http://nexus.ostdlabs.com/service/local/artifact/maven/content?r=releases&g=com.ostdlabs.etracker&a=etracker_api_domain&v=LATEST"
+	mv *.jar temp
+	unzip -d temp/unpacked temp/*.jar
+	cp temp/unpacked/migration/* $(CURDIR)/api_domain/sql/migration
+	export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+	mvn -s $(CURDIR)/../../settings.xml -Dmaven.repo.local=$(CURDIR)/../../.repository clean package
+
+clean::
+	mvn -s $(CURDIR)/../../settings.xml -Dmaven.repo.local=$(CURDIR)/../../.repository clean

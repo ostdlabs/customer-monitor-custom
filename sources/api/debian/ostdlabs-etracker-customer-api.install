@@ -1,0 +1,2 @@
+api_rest/target/api_rest.jar usr/share/ostdlabs/etracker/${customer}/${customer}-api 
+api_domain/sql/* usr/share/ostdlabs/etracker/${customer}/${customer}-api/sql

@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+# Add here any variable or target overrides you need.
+PACKAGE := $(DEB_SOURCE_PACKAGE)
+
+DEB_DH_INSTALLINIT_ARGS := --no-start
+
+build:
+	echo "build section of rules"
+
+clean::
+	echo "clean section of rules"

@@ -1,0 +1,11 @@
+Source: ostdlabs-etracker-${customer}-environment-testing
+Section: misc
+Priority: extra
+Maintainer: ECA Team <eca@ostdlabs.com>
+Build-Depends: cdbs, debhelper (>= 7.0.50~)
+
+Package: ostdlabs-etracker-${customer}-environment-testing
+Architecture: all
+Depends: ${misc:Depends}
+Description: descriptor package of testing environment for etracker ${customer} project
+
