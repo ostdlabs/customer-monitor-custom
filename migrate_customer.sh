@@ -34,7 +34,7 @@ echo "executing" $sed_command
 git add --all
 git_comment="Creating separate product base for customer [$CUSTOMER]"
 git commit -am "$git_comment" 
-git push origin $CUSTOMER
+#git push origin $CUSTOMER
 
 echo "finished sources migration"
 

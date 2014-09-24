@@ -1,4 +1,4 @@
-ostdlabs-etracker-${customer}-api (0.1-0) ostdlabs-unstable; urgency=low
+ostdlabs-monitor-${customer}-api (0.1-0) ostdlabs-unstable; urgency=low
 
   * First build ${customer}
 
