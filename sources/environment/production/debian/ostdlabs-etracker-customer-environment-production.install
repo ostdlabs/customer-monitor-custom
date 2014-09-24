@@ -1,2 +1,0 @@
-environment usr/share/ostdlabs/etracker/${customer}
-environment.properties usr/share/ostdlabs/etracker/${customer}/${customer}-api/conf

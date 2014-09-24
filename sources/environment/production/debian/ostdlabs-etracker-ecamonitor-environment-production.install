@@ -1,0 +1,2 @@
+environment usr/share/ostdlabs/etracker/ecamonitor
+environment.properties usr/share/ostdlabs/etracker/ecamonitor/ecamonitor-api/conf

@@ -1,5 +1,5 @@
-ostdlabs-monitor-${customer}-api (0.1-0) ostdlabs-unstable; urgency=low
+ostdlabs-monitor-ecamonitor-api (0.1-0) ostdlabs-unstable; urgency=low
 
-  * First build ${customer}
+  * First build ecamonitor
 
  -- Askar Akhmerov <aakhmerov@ostdlabs.com>  Sun, 26 Jan 2014 19:34:42 +0100

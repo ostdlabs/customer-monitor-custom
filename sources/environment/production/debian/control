@@ -1,11 +1,11 @@
-Source: ostdlabs-etracker-${customer}-environment-production
+Source: ostdlabs-etracker-ecamonitor-environment-production
 Section: misc
 Priority: extra
 Maintainer: ECA Team <eca@ostdlabs.com>
 Build-Depends: cdbs, debhelper (>= 7.0.50~)
 
-Package: ostdlabs-etracker-${customer}-environment-production
+Package: ostdlabs-etracker-ecamonitor-environment-production
 Architecture: all
 Depends: ${misc:Depends}
-Description: descriptor package of production environment for ${customer} project
+Description: descriptor package of production environment for ecamonitor project
 

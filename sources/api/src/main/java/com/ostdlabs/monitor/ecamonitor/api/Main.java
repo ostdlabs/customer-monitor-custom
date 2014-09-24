@@ -1,4 +1,4 @@
-package com.ostdlabs.monitor.${customer}.api;
+package com.ostdlabs.monitor.ecamonitor.api;
 
 
 

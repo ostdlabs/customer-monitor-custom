@@ -1,9 +1,9 @@
-Source: ostdlabs-monitor-${customer}-api
+Source: ostdlabs-monitor-ecamonitor-api
 Section: misc
 Priority: extra
 Maintainer: Ildar Shigapov <eca@ostdlabs.com>
 Build-Depends: cdbs, debhelper (>= 7.0.50~)
 
-Package: ostdlabs-monitor-${customer}-api
+Package: ostdlabs-monitor-ecamonitor-api
 Architecture: all
-Description: monitoring services  for etracker ${customer} project
+Description: monitoring services  for etracker ecamonitor project

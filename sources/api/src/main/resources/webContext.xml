@@ -15,7 +15,7 @@
 	http://www.hazelcast.com/schema/spring
     http://www.hazelcast.com/schema/spring/hazelcast-spring-2.1.xsd">
 
-    <context:component-scan base-package="com.ostdlabs.${customer},com.ostdlabs.etracker"/>
+    <context:component-scan base-package="com.ostdlabs.ecamonitor,com.ostdlabs.etracker"/>
     <import resource="classpath*:serviceContext.xml"/>
     <!--NB! This property is cumming from maven properties-->
     <util:properties location="${domain.infrastructure.properties}" id="domainProperties"/>
