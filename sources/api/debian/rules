@@ -11,7 +11,7 @@ JAVA_HOME := $(shell update-alternatives --query javac | grep Best: | cut -d " "
 
 build:
 	export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
-	mvn -s $(CURDIR)/../../settings.xml -Dmaven.repo.local=$(CURDIR)/../../.repository clean package
+	mvn -s $(CURDIR)/../settings.xml -Dmaven.repo.local=$(CURDIR)/../.repository clean package
 
 clean::
-	mvn -s $(CURDIR)/../../settings.xml -Dmaven.repo.local=$(CURDIR)/../../.repository clean
+	mvn -s $(CURDIR)/../settings.xml -Dmaven.repo.local=$(CURDIR)/../.repository clean
