@@ -1,1 +1,1 @@
-api/target/api.jar usr/share/ostdlabs/monitor/${customer}/${customer}-api
+target/customer-monitor-api.jar usr/share/ostdlabs/monitor/${customer}/${customer}-api
